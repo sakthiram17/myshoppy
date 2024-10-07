@@ -66,13 +66,13 @@ export default function App() {
       </View>
       {spinner?<ActivityIndicator size='large'></ActivityIndicator>:null}
       <View style={styles.cardsContainer}>
-        {books.length>0?  <FlatList
+        <FlatList
         data={books}
         renderItem={({item})=>{
           return <BookCard name={item.title} image={item.image} price={item.price} isbn13={item.isbn13} onRemove={removeBookHandler}></BookCard>
         }}
         keyExtractor={(books)=>books.isbn13} 
-        ></FlatList> : <Text>No Matching books found, try again with simpler search</Text>}
+        ></FlatList> 
       
       </View>
 
