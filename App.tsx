@@ -53,7 +53,7 @@ export default function App() {
   return (
     <View style={styles.container}>
       <View style={styles.inputContainer}>
-        <TextInput placeholder='Enter a word to search'
+        <TextInput placeholder='Enter a word'
          style = {styles.textInput}
          value={searchTerm}
          onChangeText={(enteredText)=>{
