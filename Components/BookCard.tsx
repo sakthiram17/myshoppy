@@ -24,6 +24,7 @@ const BookCard = ({image,name,price,isbn13,onRemove}:BookCardProps) => {
             onRemove(isbn13)
         }}></Button>
         </View>
+          <Text>Hello World</Text>
         </View>
     
     </View>
